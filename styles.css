@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.principal {
+    width: 100%;
+    max-width: 1000px;
+    height: 650px;
+    background-image: url(img/team.jpg);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position-x: 420px;
+    background-position-y: 190px;
+    margin: 0 auto;
+}
+
+.nav__menu {
+    color: #3e3f43;
+    margin-top: 50px;
+}
+
+
+/* criação do botão menu */
+
+.nav__menu ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__menu li {
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav__menu li:first-child {
+    font-size: 28px;
+    color: #D2872C;
+    flex-grow: 1;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+
+.nav__menu li:last-child {
+    display: none
+}
+
+.main__title {
+    color: #766F68;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 100px;
+}
+
+.main__title h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 6rem;
+}
+
+.main__description {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 355px;
+    display: flex;
+    margin-left: 10%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.main__description p {
+    font-weight: initial;
+    font-size: 25px;
+    color: #766F68;
+}
+
+.main__btn button {
+    width: 100%;
+    max-width: 280px;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.6em;
+    background-color: #D2872C;
+    border: none;
+    border-radius: 10px;
+    margin-left: 4.2em;
+    margin-top: 2.8rem;
+}
+
+
+/* fazer o alinhamento do menu*/
+
+
+/* //centralizar o menu e ajustar o botão e o background */
+
+@media screen and (max-width: 736px) {
+    .principal {
+        background-size: 360px;
+        background-position-x: center;
+        background-position-y: 100px;
+    }
+    .nav__menu {
+        margin-top: 5%;
+        margin-bottom: 55%;
+    }
+    .nav__menu ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__menu li {
+        display: none;
+        margin-top: 0;
+    }
+    .nav__menu li:first-child {
+        display: block;
+    }
+    /* ajustar o icone do mobile e finalizar o trabalho */
+    .nav__menu li:last-child {
+        display: block;
+        margin-right: 10px;
+    }
+    /* configuação do menu responsivo*/
+    .nav__menu li {
+        padding: 5px;
+    }
+    .main__title {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main__title h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 90%;
+        margin-left: auto;
+    }
+    .main__description {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .main__description p {
+        font-size: large;
+        margin-top: 1%;
+        text-align: center;
+    }
+    .main__btn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .main__btn button {
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 0%;
+        width: 100%;
+        max-width: 225px;
+    }
+}
