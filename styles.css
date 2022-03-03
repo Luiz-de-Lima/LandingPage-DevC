@@ -63,7 +63,7 @@ body{
     max-width: 355px;
     position: relative;
     left: 43px; 
-    position: initial;
+    
     
 }
 .main-description h2 {
@@ -74,7 +74,8 @@ body{
     
 }
 .main-image img{
-    width: 100%;   
+    width: 100%;  
+    max-width: 780px; 
 }
 
 .main-description p {
@@ -152,6 +153,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: initial;
         
     }
     .main-description p {
